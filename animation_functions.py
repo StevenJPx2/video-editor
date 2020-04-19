@@ -8,7 +8,7 @@ import math
 
 def linear(t, b, c, d):
     "simple linear tweening - no easing, no acceleration"
-    return c * t / d + b
+    return (c * t / d) + b
 
 
 # Quadratic
@@ -17,7 +17,7 @@ def linear(t, b, c, d):
 def ease_in_quad(t, b, c, d):
     "easing in quadratic"
     t /= d
-    return c * t * t + b
+    return (c * t * t) + b
 
 
 def ease_out_quad(t, b, c, d):
@@ -30,9 +30,9 @@ def ease_in_out_quad(t, b, c, d):
     "easing in quadratic"
     t /= d / 2
     if t < 1:
-        return c / 2 * t * t + b
+        return (c / 2 * t * t) + b
     t -= 1
-    return -c / 2 * (t * (t - 2) - 1) + b
+    return (-c / 2) * (t * (t - 2) - 1) + b
 
 
 # Cubic
@@ -41,7 +41,7 @@ def ease_in_out_quad(t, b, c, d):
 def ease_in_cubic(t, b, c, d):
     "easing in cubic"
     t /= d
-    return c * t * t * t + b
+    return (c * t * t * t) + b
 
 
 def ease_out_cubic(t, b, c, d):
@@ -55,9 +55,9 @@ def ease_in_out_cubic(t, b, c, d):
     "easing in out cubic"
     t /= d / 2
     if t < 1:
-        return c / 2 * t * t * t + b
+        return (c / 2 * t * t * t) + b
     t -= 2
-    return c / 2 * (t * t * t + 2) + b
+    return (c / 2) * (t * t * t + 2) + b
 
 
 # Quartic
@@ -80,9 +80,9 @@ def ease_in_out_quartic(t, b, c, d):
     "easing in out quartic"
     t /= d / 2
     if t < 1:
-        return c / 2 * t * t * t * t + b
+        return (c / 2 * t * t * t * t) + b
     t -= 2
-    return -c / 2 * (t * t * t * t - 2) + b
+    return (-c / 2) * (t * t * t * t - 2) + b
 
 
 # Quintic
@@ -98,16 +98,16 @@ def ease_out_quintic(t, b, c, d):
     "easing out quintic"
     t /= d
     t -= 1
-    return -c * (t * t * t * t * t - 1) + b
+    return c * (t * t * t * t * t + 1) + b
 
 
 def ease_in_out_quintic(t, b, c, d):
     "easing in out quintic"
     t /= d / 2
     if t < 1:
-        return c / 2 * t * t * t * t * t + b
+        return (c / 2 * t * t * t * t * t) + b
     t -= 2
-    return -c / 2 * (t * t * t * t * t - 2) + b
+    return (c / 2) * (t * t * t * t * t + 2) + b
 
 
 # Sinusoidal

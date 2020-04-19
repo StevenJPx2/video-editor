@@ -1,0 +1,8 @@
+normal_font:
+  font_name: "Avenir Next"
+  font_size: 36
+  anchor_x: "center"
+  anchor_y: "center"
+
+basic_animation:
+  style: "ease_in_out_quintic"

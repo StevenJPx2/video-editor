@@ -1,0 +1,15 @@
+[1]: 
+"Hello",
+x=900 -> 900 -> 1210,
+y=770 -> 585,
+t=0.5 -> 3,
+duration=2 -> 2.5,
+imported_styles=["normal_font", "basic_animation"],
+
+[2]:
+"World",
+x=1040 -> 1040 -> 1200,
+y=350 -> 535,
+t=0 -> 2.5,
+duration=2,
+imported_styles=["normal_font", "basic_animation"],
